@@ -1,0 +1,96 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  color: #213547;
+}
+
+#app {
+  padding: 1rem;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(103, 58, 183, 1);
+  margin-bottom: 20px;
+}
+
+input#name {
+  all: unset;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  padding: 4px 0;
+}
+
+input.submit-btn,
+.current-url-btn {
+  all: unset;
+  border-radius: 4px;
+  background-color: rgba(103, 58, 183, 1);
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.current-url-btn {
+  background-color: #4CAF50;
+  margin-top: 12px;
+}
+
+.current-url-btn:hover {
+  background-color: #45a049;
+}
+
+input.submit-btn:hover {
+  background-color: rgba(103, 58, 183, 0.9);
+}
+
+#myForm {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lat, .long {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#lat-value, #long-value {
+  cursor: pointer;
+  user-select: all;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+#lat-value:hover, #long-value:hover {
+  background-color: rgba(103, 58, 183, 0.1);
+  color: rgba(103, 58, 183, 1);
+}

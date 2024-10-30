@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "LatLong Extractor",
+  "version": "1.0.0",
+  "description": "Extract latitude and longitude coordinates from Google Maps URLs",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["clipboardWrite", "activeTab", "tabs", "storage"],
+  "icons": {
+    "16": "vite.svg",
+    "48": "vite.svg",
+    "128": "vite.svg"
+  }
+}
